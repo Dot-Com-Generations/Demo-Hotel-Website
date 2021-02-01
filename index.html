@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ridzz Cuisines</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href=".\Data\Ridzz Logo Black.png" type="image/icon type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+        
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+        /* Full height image header */
+        
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("./Data/Header_Image.jpg");
+            min-height: 100%;
+        }
+        /* Full height image header */
+        /* .bgimg-s {
+            background-position: center;
+            background-size: cover;
+            background-image: url("./Data/Header_Image 1.png");
+            min-height: 100%;
+        } */
+        
+        .w3-bar .w3-button {
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="w3-top ">
+        <div class="w3-bar w3-black w3-hide-small w3-hide-medium " id="myNavbar">
+
+            <!-- Home -->
+            <a href="#home" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-text-white "><b>HOME</b></a>
+
+            <!-- Links -->
+            <div class="w3-left w3-hide-small w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button w3-text-white"><b>ABOUT</b></a>
+                <a href="#work" class="w3-bar-item w3-button w3-text-white"><b>GALLERY</b></a>
+                <a href="#pricing" class="w3-bar-item w3-button w3-text-white"><b>MENU</b></a>
+                <a href="#contact" class="w3-bar-item w3-button w3-text-white"><b>CONTACT US</b></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar Small Screen -->
+    <div class="w3-top">
+        <div class="w3-bar w3-hide-large w3-black w3-card" id="myNavbar">
+            <!-- Small Screen menu -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large " onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="w3-center">
+                <a href="#home-s" class="w3-bar-item w3-button w3-hide-large w3-text-white w3-display-right"><b>RIDZZ
+                                                CUISINES</b></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drawer for small Screens -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left  w3-hide-large" style="display:none;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
+        <a href="#home-s" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">MENU</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min w3-hide-medium w3-hide-small" id="home">
+
+
+
+        <div class="w3-display-topleft w3-text-white" style="padding:120px 48px">
+            <span class="w3-jumbo w3-hide-small w3-hide-medium"><b>Welcome To 'Ridzz
+                                        Cuisines'</b></span><br>
+
+            <span class="w3-xlarge w3-hide-small w3-hide-medium">THE ULTIMATE MEAL FOR YOU <br>IS JUST AN
+                                ORDER AWAY...</span>
+
+            <p><a href="#about" class="w3-button w3-grey w3-padding-large w3-large w3-hide-medium w3-hide-small w3-margin-top w3-hover-opacity-off">Explore
+                                        More.</a>
+            </p>
+        </div>
+
+
+        <span class="w3-jumbo w3-display-right w3-hide-medium w3-hide-small"><img src=".\Data\Ridzz Logo.png"
+                                alt="Logo" style="height: 250px; margin: 0px 30px 150px 0px;"></span><br>
+
+
+
+        <!-- Social Icons -->
+        <div class="w3-display-topright w3-text-grey w3-large" style="padding:72px 28px">
+            <a href="https://www.facebook.com/FousesIndia/" title="Fouses@Facebook" target="_blank"><i
+                                        class="fa fa-facebook-official w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.instagram.com/fousesindia/" title="Fouses@Instagram" target="_blank"><i
+                                        class="fa fa-instagram w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.youtube.com/channel/UCi6aID4aePpZesLy4Jshi1A/" title="Fouses@Youtube" target="_blank"><i class="fa fa-youtube w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.linkedin.com/company/fouses/" title="Fouses@LinkedIn" target="_blank" style="margin: 5px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+    </header>
+
+
+    <!-- Header with full-height image for small Screen Devices -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min  w3-hide-large" id="home-s">
+        <!-- Header with full-height image - Medium Screen -->
+        <div class="w3-display-topleft w3-text-white" style="padding:120px 48px">
+            <span class="w3-xxxlarge w3-hide-small w3-hide-large"><b>Welcome To 'Ridzz
+                                                Cuisines'&nbsp;&nbsp;</b></span><br>
+
+            <span class="w3-large w3-hide-small w3-hide-large"><br>THE ULTIMATE MEAL <br>FOR YOU <br>IS JUST AN
+                                        ORDER AWAY...</span>
+
+
+
+        </div>
+        <div class="w3-display-bottommiddle" style="margin: 0px 0px 32px 0px;">
+            <p><a href="#about" class="w3-button  w3-black  w3-large w3-hide-small w3-margin-top w3-hover-opacity-off">Explore <i
+                    class="fa fa-arrow-down  w3-hover-opacity" style="margin: 5px;"></i></a>
+            </p>
+        </div>
+
+        <!--Logo-->
+        <span class="w3-jumbo w3-display-right w3-hide-small w3-hide-large"><img src=".\Data\Ridzz Logo.png" alt="Logo"
+                    style="height: 180px; margin: 0px 32px 32px 0px;"></span><br>
+
+        <!-- Social Icons -->
+        <div class="w3-display-topright w3-text-grey w3-large" style="padding:72px 28px">
+            <a href="https://www.facebook.com/FousesIndia/" title="Fouses@Facebook" target="_blank"><i
+                                                class="fa fa-facebook-official w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.instagram.com/fousesindia/" title="Fouses@Instagram" target="_blank"><i
+                                                class="fa fa-instagram w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.youtube.com/channel/UCi6aID4aePpZesLy4Jshi1A/" title="Fouses@Youtube" target="_blank"><i class="fa fa-youtube w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.linkedin.com/company/fouses/" title="Fouses@LinkedIn" target="_blank" style="margin: 5px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+
+
+
+
+
+
+        <!-- Header with full-height image - Small Screen -->
+        <div class="w3-display-topleft w3-text-white" style="padding:120px 25px">
+            <span class="w3-xxlarge w3-hide-medium w3-hide-large"><b>Welcome To 'Ridzz Cuisines'</b></span><br>
+            <span class="w3-large w3-hide-large w3-hide-medium">THE ULTIMATE MEAL <br> FOR YOU <br>IS JUST
+                                <br>AN ORDER
+                                AWAY...</span>
+        </div>
+
+        <div class="w3-display-bottommiddle " style="margin: 0px 0px 32px 0px;">
+            <p><a href="#about" class="w3-button  w3-black  w3-large w3-hide-medium w3-margin-top w3-hover-opacity-off">Explore <i
+                    class="fa fa-arrow-down  w3-hover-opacity" style="margin: 5px;"></i></a>
+            </p>
+        </div>
+
+        <!--Logo-->
+        <span class="w3-jumbo w3-display-right w3-hide-medium w3-hide-large"><img src=".\Data\Ridzz Logo.png" alt="Logo"
+                                style="height: 140px; margin: 0px 10px 30px 0px;"></span><br>
+
+        <!-- Social Icons -->
+        <div class="w3-display-topright w3-text-grey w3-large" style="padding:72px 28px">
+            <a href="https://www.facebook.com/FousesIndia/" title="Fouses@Facebook" target="_blank"><i
+                                        class="fa fa-facebook-official w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.instagram.com/fousesindia/" title="Fouses@Instagram" target="_blank"><i
+                                        class="fa fa-instagram w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.youtube.com/channel/UCi6aID4aePpZesLy4Jshi1A/" title="Fouses@Youtube" target="_blank"><i class="fa fa-youtube w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.linkedin.com/company/fouses/" title="Fouses@LinkedIn" target="_blank" style="margin: 5px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container w3-border" style="padding:100px 16px" id="about">
+        <h3 class="w3-center">ABOUT US</h3>
+        <p class="w3-center w3-large">
+            Dining &nbsp;&nbsp; | &nbsp;&nbsp; Catering &nbsp;&nbsp; | &nbsp;&nbsp; Cafe &nbsp;&nbsp; | &nbsp;&nbsp; Bar
+        </p>
+        <p class="w3-center w3-large"><br>We've Got It All Covered !</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <img src="https://cdn.pixabay.com/photo/2018/08/10/21/52/restaurant-3597677_1280.jpg" alt="Dining" style="width: 100%;">
+                <p class="w3-large">Finest Dining</p>
+                <p>Visit our branches anywhere to experience the finest dining of all. World class service and ultra-hygenic premise makes us the top choice of everyone in the country.
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg" alt="Dining" style="width: 100%;">
+                <p class="w3-large">70+ Cuisines</p>
+                <p>We don't have 'Cuisines' in our name just for the sake of it. Explore from over 70+ cuisines ranging from the local to worldwode cultures. Some of the must try are the Indian Cuisine and the Greek Cuisine.
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="https://cdn.pixabay.com/photo/2017/06/20/23/15/coffee-2425303_1280.jpg" alt="Dining" style="width: 100%;">
+                <p class="w3-large">Fulfill your Work-Caffiene Needs</p>
+                <p>Be it - Coffee breaks from work, or whenever you want to have a quiet time to explore some new ground-breaking ideas - Our Cafe is the place to go. Enjoy Free WIFI as you wait for your order and do your work.
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="https://cdn.pixabay.com/photo/2015/09/02/12/35/bar-918541_1280.jpg" alt="Dining" style="width: 100%;">
+                <p class="w3-large">Party All Night - Best Bar in Town</p>
+                <p>Wanna Party?? Come Over to the best Bar in Town. Happy Hours - Everyday - 12PM to 6 PM
+                    <br />Visit Now - First Drink is On The House!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <div class="w3-container" style="padding:150px 16px" id="work">
+        <h3 class="w3-center">PHOTO GALLERY</h3>
+        <p class="w3-center w3-large">Some of our Iconic Dishes</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="https://cdn.pixabay.com/photo/2015/09/02/12/43/meal-918639_1280.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dish - Thai">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="https://cdn.pixabay.com/photo/2015/09/02/12/41/dish-918613_1280.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dish - Greek">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="https://cdn.pixabay.com/photo/2015/09/02/12/26/soup-918422_1280.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dish - French">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="https://cdn.pixabay.com/photo/2017/09/30/15/10/pizza-2802332_1280.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dish - Italian">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Demo Menu Card Section -->
+    <div class="w3-container w3-center w3-dark-grey" style="padding:95px 16px" id="pricing">
+        <h3>MENUS</h3>
+        <p class="w3-large">Choose from a variety of curated meal plans.</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Starters</li>
+                    <li class="w3-padding-16">Starters Food Item - 1</li>
+                    <li class="w3-padding-16">Starters Food Item - 2</li>
+                    <li class="w3-padding-16">Starters Food Item - 3</li>
+                    <li class="w3-padding-16">Starters Food Item - 4</li>
+                    <li class="w3-padding-16">Starters Food Item - 5</li>
+
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">More</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Main Course</li>
+                    <li class="w3-padding-16">Main Course Food Item - 1</li>
+                    <li class="w3-padding-16">Main Course Food Item - 2</li>
+                    <li class="w3-padding-16">Main Course Food Item - 3</li>
+                    <li class="w3-padding-16">Main Course Food Item - 4</li>
+                    <li class="w3-padding-16">Main Course Food Item - 5</li>
+
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">More</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Deserts</li>
+                    <li class="w3-padding-16">Deserts Item - 1</li>
+                    <li class="w3-padding-16">Deserts Item - 2</li>
+                    <li class="w3-padding-16">Deserts Item - 3</li>
+                    <li class="w3-padding-16">Deserts Item - 4</li>
+                    <li class="w3-padding-16">Deserts Item - 5</li>
+
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">More</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="w3-container w3-light-grey" style="padding:90px 16px" id="contact">
+        <h3 class="w3-center">CONTACT US</h3>
+        <p class="w3-center w3-large">Enquiry about a Booking ?</p>
+        <p class="w3-center w3-large">Feel Free to Message Us :</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Location, India</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 xxx-(xxx)-xxxx</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: email-id@mail.com</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p class="w3-center">
+                    <button class="w3-button w3-padding-large w3-large w3-black" type="submit">
+                                                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                                        </button>
+                </p>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-hide-small w3-hide-medium w3-button w3-light-grey"><i
+                                class="fa fa-arrow-up w3-margin-right"></i>To the
+                        top</a>
+
+        <a href="#home-s" class="w3-hide-large w3-button w3-light-grey"><i
+                                class="fa fa-arrow-up w3-margin-right"></i>To the
+                        top</a>
+
+
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/FousesIndia/" title="Fouses@Facebook" target="_blank"><i
+                                        class="fa fa-facebook-official w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.instagram.com/fousesindia/" title="Fouses@Instagram" target="_blank"><i
+                                        class="fa fa-instagram w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.youtube.com/channel/UCi6aID4aePpZesLy4Jshi1A/" title="Fouses@Youtube" target="_blank"><i class="fa fa-youtube w3-hover-opacity" style="margin: 5px;"></i></a>
+            <a href="https://www.linkedin.com/company/fouses/" title="Fouses@LinkedIn" target="_blank"><i
+                                        class="fa fa-linkedin w3-hover-opacity" style="margin: 5px;"></i></a>
+        </div>
+        <p>2018 © Copyrights <a href="https://docogen.com/" title="DoCoGen" target="_blank" class="w3-hover-text-blue">DoCoGen</a>. All rights reserved.</p>
+        
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
